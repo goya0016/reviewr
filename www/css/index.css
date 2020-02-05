@@ -68,7 +68,10 @@ figcaption{
   margin-left:1rem;
     font-weight: 600;
 }
-#btnAdd,#btnDetailsBack,#btnAddBack,#btnTakePhoto{  
+#btnAdd,
+#btnDetailsBack,
+#btnAddBack,
+#btnTakePhoto{  
 height:30px;
 /* align-self: center ; */margin-top: 0.5rem;
 }
@@ -115,31 +118,35 @@ height:30px;
   font-size: 1rem;
   grid-area: btn-left;
 }
-#home header{
+#home header,
+#details header{
 display:flex;
-flex-direction: row;justify-content: space-between;
+flex-direction: row;
+justify-content: space-between;
 }
 #home h1{
-    padding-left: 30vw;
+    padding-left: 25vw;
     text-align: center;
 }
-#btnAdd{
-align-self: flex-end;
-box-shadow: 4px 4px 20px grey;
-border-radius: 50%;
-/* height: 45px; */
-margin: 0.10rem;
-margin-top: 0.10rem;
-align-self: center ;
+#details h1{
+   padding-left: 35vw;
 }
-#imgDetails,#imgAdd{
-  height: 40vh;
+#btnAdd{
+border-radius: 50%;
+margin: 0rem;
+align-self: center ;
+    height:25px;
+padding-left: 01rem;}
+#imgDetails,
+#imgAdd{
+  /* height: 40vh; */
   width: 90vw;
   margin: 1rem;
   border:3px solid;
     box-shadow:4px 4px 4px grey;
 }
-#btnDelete,#btnSave{
+#btnDelete,
+#btnSave{
   width: 65vw;
   height: 1.25rem;
   margin-top:2rem;
@@ -150,9 +157,10 @@ align-self: center ;
 select,input{
   width: 90vw;
   height: 1.5rem;
-  /* font-size:1rem; */
+  /* font-size:1rem; */padding-left: 0.5rem;
 }
-#details,#add{
+#details,
+#add{
   text-align: center;
 }
 #btnTakePhoto{
