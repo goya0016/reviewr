@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" 
+            content="default-src 'self' data: gap://ready 'unsafe-eval';  
+            style-src 'self' 'unsafe-inline'; 
+            media-src *; 
+            script-src 'unsafe-inline' 'self';
+            img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        
+        <title>Reviewr Project</title>
+    </head>
+    <body>
+        
+        <section class="page active" id="home">
+          <header>
+            <h1> Your Reviews</h1>
+            <img src="media/add.svg" alt="Add" id="btnAdd" data-target="add">
+            </header>
+            <main>
+              <ul class="review-list">
+                <!-- list of saved reviews gets added here -->
+              </ul>
+              
+            </main>
+          </section>
+          <section class="page" id="details">
+            <header>
+              <h1>Details</h1>
+              <img src="media/next.svg" alt="Back" id="btnDetailsBack" data-target="home">
+            </header>
+            <main>
+              <figure><img src="" alt="image" id="imgDetails" />
+             <figcaption> 
+               <!-- <p class="setTitle">Item Name</p>
+              <p><span class="detailRate">5</span>/5</p> -->
+            </figcaption>
+          </figure>
+              <p><button id="btnDelete">Delete</button></p>
+            </main>
+          </section>
+          <section class="page" id="add">
+            <header>
+              <img src="media/back.svg" alt="Back" id="btnAddBack" data-target="home">
+              <h1>Add new Review</h1>
+            </header>
+            <main>
+              <div class="photo-button">
+                <img src="media/camera.svg" id="btnTakePhoto">
+                Please click the button above to start taking image
+              </div>
+              <div class="photo-form">
+                <p><img src="" alt="" id="imgAdd" /></p>
+                <p>
+                  <label for="name"
+                    ><input type="text" id="name" placeholder="Item Name"
+                  /></label>
+                </p>
+                <p>
+                  <label for="rating"
+                    ></label>
+                    <select name="rating" id="rating">
+                      <option value="">--Please choose a Rating--</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </select>
+                </p>
+                <p><button id="btnSave">Save Review</button></p>
+              </div>
+            </main>
+          </section>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
